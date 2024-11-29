@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/img_1">
+
+    <!-- Title Text: Centered -->
+
+
+    <ImageView
+        android:id="@+id/unicorn_image"
+        android:layout_width="395dp"
+        android:layout_height="481dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="35dp"/>
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unicorn_image"
+
+        android:layout_marginTop="-394dp"
+        android:fontFamily="@font/georgia"
+        android:gravity="center"
+        android:text="WELOCME"
+        android:textColor="#DBD9D1"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description_text"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="horizontal">
+
+        <!-- Register Button -->
+
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="#B89B62"
+            android:padding="12dp"
+            android:fontFamily="@font/georgia"
+            android:paddingHorizontal="50dp"
+            android:text="Login"
+            android:background="@drawable/rounded_corner"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="#536493"
+            android:padding="12dp"
+            android:fontFamily="@font/georgia"
+            android:text="Register"
+            android:background="@drawable/rounded_corner"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

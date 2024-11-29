@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Page Title -->
+
+        <!-- Task Title Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Edit Task"
+            android:textColor="#8E96C3"
+            android:textSize="24sp"
+            android:fontFamily="@font/custom_font_family"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Title"
+            android:fontFamily="@font/custom_font_family"
+            android:textColor="#8E96C3"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Task Title -->
+        <EditText
+            android:id="@+id/edit_task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter task title"
+            android:fontFamily="@font/custom_font_family"
+            android:padding="16dp"
+            android:background="@drawable/glass_background"
+            android:layout_marginBottom="16dp"
+            android:inputType="text"/>
+
+        <!-- Task Description Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/custom_font_family"
+            android:text="Task Description"
+            android:textColor="#8E96C3"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Task Description -->
+        <EditText
+            android:id="@+id/edit_task_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter task description"
+            android:fontFamily="@font/custom_font_family"
+            android:padding="16dp"
+            android:background="@drawable/glass_background"
+            android:layout_marginBottom="16dp"
+            android:minLines="3"
+            android:gravity="top"
+            android:inputType="textMultiLine"/>
+
+        <!-- Status Label -->
+
+        <!-- Status Spinner -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/custom_font_family"
+            android:text="Status"
+            android:textColor="#C6C9DC" />
+
+        <Spinner
+            android:id="@+id/edit_task_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/glass_background"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Priority Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/custom_font_family"
+            android:text="Priority"
+            android:textColor="#BFC1D3"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Priority Spinner -->
+        <Spinner
+            android:id="@+id/edit_task_priority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/glass_background"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Due Date Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/custom_font_family"
+            android:layout_height="wrap_content"
+            android:text="Due Date"
+            android:textColor="#BCC0D1"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Due Date Selector -->
+        <TextView
+            android:id="@+id/edit_task_due_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Select Due Date"
+            android:fontFamily="@font/custom_font_family"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:background="@drawable/glass_background"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/update_task_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/custom_font_family"
+            android:text="Update Task"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:background="@drawable/glass_background"
+            android:backgroundTint="#000910"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

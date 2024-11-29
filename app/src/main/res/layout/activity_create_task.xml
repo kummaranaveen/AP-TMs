@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".CreateTaskActivity"
+    android:background="@drawable/img_1">
+
+    <!-- Page Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create New Task"
+        android:textSize="24sp"
+        android:textColor="#8E96C3"
+        android:fontFamily="@font/custom_font_family"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+    <!-- Task Title -->
+    <EditText
+        android:id="@+id/create_task_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"
+        android:fontFamily="@font/custom_font_family"
+        android:padding="16dp"
+        android:background="@drawable/glass_background"
+        android:layout_marginBottom="16dp"
+        android:inputType="text"/>
+
+    <!-- Task Description -->
+    <EditText
+        android:id="@+id/create_task_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/custom_font_family"
+        android:hint="Task Description"
+        android:padding="16dp"
+        android:background="@drawable/glass_background"
+        android:layout_marginBottom="16dp"
+        android:minLines="3"
+        android:gravity="top"
+        android:inputType="textMultiLine"/>
+
+    <!-- Status Spinner -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:fontFamily="@font/custom_font_family"
+        android:textColor="@color/m3_text_secondary"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/create_task_status"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:background="@drawable/glass_background"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Priority Spinner -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priority"
+        android:fontFamily="@font/custom_font_family"
+        android:textColor="@color/background_color"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/create_task_priority"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:background="@drawable/glass_background"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Due Date -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due Date"
+        android:fontFamily="@font/custom_font_family"
+        android:textColor="@color/background_color"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/create_task_due_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Select Due Date"
+        android:fontFamily="@font/custom_font_family"
+        android:background="@drawable/glass_background"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+    <!-- Create Button -->
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="#C57575"
+            android:padding="16dp"
+            android:text="Cancel"
+            android:fontFamily="@font/custom_font_family"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/create_task_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Create Task"
+            android:fontFamily="@font/custom_font_family"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="#6AA884"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</LinearLayout>
